@@ -95,9 +95,9 @@ class PlanemoStagingInterface(StagingInterace):
     def _attach_file(self, path):
         return attach_file(path)
 
-    def _handle_job(self, job_response):
-        job_id = job_response["id"]
-        _wait_for_job(self._user_gi, job_id)
+    #def _handle_job(self, job_response):
+    #    job_id = job_response["id"]
+    #    _wait_for_job(self._user_gi, job_id)
 
     @property
     def use_fetch_api(self):
